@@ -1,9 +1,11 @@
-﻿生成启动时间为 2017/4/24 星期一 13:35:05。
+﻿生成启动时间为 2017/4/25 星期二 18:27:45。
      1>项目“D:\YX_Tools\Code\New_part\New_part.vcxproj”在节点 2 上(Build 个目标)。
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(346,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
      1>ClCompile:
-         D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /I"D:\Program Files\Siemens\NX 11.0\ugopen" /Zi /nologo /W3 /WX- /Od /D _CRT_SECURE_NO_WARNINGS /D _SECURE_SCL=0 /D _USRDLL /D _WINDLL /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"x64\Debug\\" /Fd"x64\Debug\vc110.pdb" /Gd /TP /errorReport:prompt New_part.cpp
+         D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /I"D:\Program Files\Siemens\NX 11.0\ugopen" /Zi /nologo /W3 /WX- /Od /D _CRT_SECURE_NO_WARNINGS /D _SECURE_SCL=0 /D _USRDLL /D _WINDLL /D _UNICODE /D UNICODE /D _AFXDLL /Gm /EHsc /RTC1 /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /GR /Fo"x64\Debug\\" /Fd"x64\Debug\vc110.pdb" /Gd /TP /errorReport:prompt INIParser.cpp New_part.cpp
          New_part.cpp
+         INIParser.cpp
+         正在生成代码...
        Link:
          D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\YX_Tools\Application\/New_part.dll" /INCREMENTAL /NOLOGO /LIBPATH:"D:\Program Files\Siemens\NX 11.0\ugopen" libufun.lib libufun_cae.lib libufun_cam.lib libnxopencpp.lib libnxopencpp_annotations.lib libnxopencpp_assemblies.lib libnxopencpp_bodydes.lib libnxopencpp_cae.lib libnxopencpp_cam.lib libnxopencpp_diagramming.lib libnxopencpp_die.lib libnxopencpp_display.lib libnxopencpp_drafting.lib libnxopencpp_drawings.lib libnxopencpp_facet.lib libnxopencpp_features.lib libnxopencpp_fields.lib libnxopencpp_formboard.lib libnxopencpp_gateway.lib libnxopencpp_geometricanalysis.lib libnxopencpp_geometricutilities.lib libnxopencpp_issue.lib libnxopencpp_layer.lib libnxopencpp_layout2d.lib libnxopencpp_markup.lib libnxopencpp_mechanicalrouting.lib libnxopencpp_mechatronics.lib libnxopencpp_mfg.lib libnxopencpp_modldirect.lib libnxopencpp_motion.lib libnxopencpp_openxml.lib libnxopencpp_optimization.lib libnxopencpp_options.lib libnxopencpp_partfamily.lib libnxopencpp_pdm.lib libnxopencpp_physmat.lib libnxopencpp_placement.lib libnxopencpp_plas.lib libnxopencpp_positioning.lib libnxopencpp_preferences.lib libnxopencpp_report.lib libnxopencpp_routing.lib libnxopencpp_shapesearch.lib libnxopencpp_sheetmetal.lib libnxopencpp_shipdesign.lib libnxopencpp_sim.lib libnxopencpp_tooling.lib libnxopencpp_userdefinedobjects.lib libnxopencpp_userdefinedtemplate.lib libnxopencpp_validate.lib libnxopencpp_visualreporting.lib libnxopencpp_weld.lib libugopenint.lib libugopenint_cae.lib libugopenint_cam.lib libnxopenuicpp.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"D:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"D:\YX_Tools\Application\New_part.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\YX_Tools\Application\/New_part.lib" /MACHINE:X64 /DLL x64\Debug\INIParser.obj
          x64\Debug\New_part.obj
@@ -13,4 +15,4 @@
 
 生成成功。
 
-已用时间 00:00:01.39
+已用时间 00:00:01.83

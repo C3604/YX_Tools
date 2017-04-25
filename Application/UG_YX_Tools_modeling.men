@@ -36,6 +36,14 @@ MENU YX_tools
 	MESSAGE	计算器
 	BITMAP calculator
 	ACTIONS "start calc.exe"
+	
+	BUTTON	Yang_11
+	LABEL	新建视图
+	MESSAGE	创建新的模型视图,以不同方式显示部件
+	BITMAP calculator
+	ACTIONS CreateNewLayout
+	
+	
 
 	CASCADE_BUTTON YX1
     LABEL BOM工具
