@@ -1,0 +1,33 @@
+!
+! 
+!
+VERSION 120
+EDIT UG_GATEWAY_MAIN_MENUBAR
+
+AFTER UG_WINDOW
+
+    CASCADE_BUTTON CN_APPLICATION_BTN
+    LABEL GC Toolkits
+
+END_OF_AFTER
+
+MENU CN_APPLICATION_BTN
+     
+     CASCADE_BUTTON/PLATFORM=(IX86WNT,X64WNT) SECURITY_BTN
+     LABEL Part File Security
+     
+END_OF_MENU
+
+MENU SECURITY_BTN
+
+    BUTTON CN_STD_SET_PASSWORD_BTN
+    LABEL Set Password...
+    BITMAP encrypt_part
+    ACTIONS libgc_part_security
+
+    BUTTON CN_STD_REMOVE_PASSWORD_BTN
+    LABEL Remove Password...
+    BITMAP decrypt_part
+    ACTIONS libgc_part_security
+
+END_OF_MENU

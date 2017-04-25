@@ -1,0 +1,26 @@
+TITLE  YX工具（建模）
+VERSION 170
+DOCK TOP
+
+    BUTTON Body_info
+    LABEL 实体信息
+
+	
+	BUTTON	Yang_3
+	LABEL	对称块
+
+	BUTTON	Yang_4
+	LABEL	简单圆柱
+
+	
+	BUTTON	Yang_10
+	LABEL	计算器
+
+
+    SEPARATOR
+
+    BUTTON YX1_1
+    LABEL 设置属性
+	
+	BUTTON YX1_2
+	LABEL	导出BOM表

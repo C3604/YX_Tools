@@ -1,0 +1,56 @@
+!
+! 
+!
+TITLE  CAM Tool - GC Toolkits 
+VERSION 170
+DOCK TOP
+
+    BUTTON CN_ELECTRODE_STANDARD_WORK_BTN
+    LABEL Workpiece Setup
+    BITMAP ele_checkgreen
+    
+    BUTTON CN_ELECTRODE_STANDARD_TEMP_BTN
+    LABEL Template Admin
+    BITMAP ele_drawing
+    
+    BUTTON CN_ELECTRODE_SETUP_BTN
+    LABEL Configuration
+    BITMAP ele_init_proj
+
+    BUTTON CN_ELECTRODE_TASK_MANAGER_BTN
+    LABEL Electrode Task Manager
+    BITMAP ele_bom
+
+    SEPARATOR
+
+    BUTTON CN_WEDM_ENHANCE_BTN
+    LABEL WEDM Enhance
+    BITMAP wedm_user
+
+    SEPARATOR
+    
+    BUTTON CN_CAM_MANUFACTURE_FIXED_DRAFTING_BTN
+    LABEL Fixture Drawing
+    BITMAP create_autodrawing
+    
+    BUTTON CN_CAM_WORK_ORDER_BTN
+    LABEL Work Order
+    BITMAP ont_documentation
+    
+    SEPARATOR
+
+    BUTTON CN_CREATE_OPERATION_BTN
+    LABEL Create Operation with Wizard
+    BITMAP ont_o_properties
+    
+    BUTTON CN_EDIT_OPERATION_BTN
+    LABEL Edit Operation with Spreadsheet
+    BITMAP ont_o_edit
+
+    BUTTON CN_CAM_BATCH_POST_BTN
+    LABEL Batch Postprocess
+    BITMAP process_batch
+
+    BUTTON CN_CAM_SIMULATION_VALIDATION_REPORT_BTN
+    LABEL Simulation Validation Report...
+    BITMAP simulation_validation_report

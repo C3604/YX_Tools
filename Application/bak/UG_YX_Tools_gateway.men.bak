@@ -1,0 +1,111 @@
+!
+! 
+!
+VERSION 120
+EDIT UG_GATEWAY_MAIN_MENUBAR
+
+AFTER UG_WINDOW
+
+    CASCADE_BUTTON CN_APPLICATION_BTN
+    LABEL GC Toolkits
+
+END_OF_AFTER
+
+MENU CN_APPLICATION_BTN
+
+    CASCADE_BUTTON CN_DCS_BTN
+    LABEL GC DCS
+
+END_OF_MENU
+
+MENU CN_DCS_BTN
+
+    CASCADE_BUTTON CN_CHECKER_BTN
+    LABEL Checkers
+    
+    CASCADE_BUTTON CN_ATTRIBUTE_TOOL_BTN
+    LABEL Attribute Tool
+     
+    CASCADE_BUTTON CN_STANDARDIZATION_TOOL_BTN
+    LABEL Standardization Tool
+    
+    CASCADE_BUTTON CN_OTHER_TOOL_BTN
+    LABEL Other Tool
+
+    CASCADE_BUTTON/PLATFORM=(IX86WNT,X64WNT) SECURITY_BTN
+    LABEL Part File Security
+    
+END_OF_MENU
+
+MENU CN_CHECKER_BTN
+    
+    BUTTON CN_CK_MODLE_BTN
+    LABEL Modeling Checkers
+    BITMAP modeling_checker.bmp
+    ACTIONS mqc_profile_modeling_cn.dfa
+    
+    BUTTON CN_CK_DRAFT_BTN
+    LABEL Drafting Checkers
+    BITMAP drafting_checker.bmp
+    ACTIONS mqc_profile_drafting_cn.dfa
+    
+    BUTTON CN_CK_ASSEM_BTN
+    LABEL Assembly Checkers
+    BITMAP assembly_checker.bmp
+    ACTIONS mqc_profile_assembly_cn.dfa
+    
+END_OF_MENU
+
+MENU CN_ATTRIBUTE_TOOL_BTN
+    
+    BUTTON CN_ATTR_TOOL_BTN
+    LABEL Attribute Tool...
+    BITMAP attribute.bmp
+    ACTIONS libgctool
+
+END_OF_MENU
+
+MENU CN_STANDARDIZATION_TOOL_BTN
+
+    BUTTON CN_STD_REFERENSET_BTN
+    LABEL Standardize Reference Sets...
+    BITMAP reference_set
+    ACTIONS libgctool
+    
+    BUTTON CN_STD_LAYER_CAT_BTN
+    LABEL Standardize Layer Category...
+    BITMAP layer_category
+    ACTIONS libgctool
+   
+    BUTTON CN_STD_LAYER_STA_BTN
+    LABEL Standardize Layer Status...
+    BITMAP layer_settings
+    ACTIONS libgctool
+    
+END_OF_MENU
+
+MENU CN_OTHER_TOOL_BTN
+
+    BUTTON CN_COMPONENT_RENAME_BTN
+    LABEL Rename and Export Component...
+    BITMAP rename_and_export_component
+    ACTIONS libgctool
+
+END_OF_MENU
+
+MENU SECURITY_BTN
+
+    BUTTON CN_STD_SET_PASSWORD_BTN
+    LABEL Set Password...
+    BITMAP encrypt_part
+    ACTIONS libgc_part_security
+
+    BUTTON CN_STD_REMOVE_PASSWORD_BTN
+    LABEL Remove Password...
+    BITMAP decrypt_part
+    ACTIONS libgc_part_security
+
+END_OF_MENU
+
+
+

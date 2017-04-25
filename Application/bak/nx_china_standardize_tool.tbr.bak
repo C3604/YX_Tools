@@ -1,0 +1,45 @@
+!
+! 
+!
+TITLE  Standardization Tool - GC Toolkits
+VERSION 170
+DOCK TOP
+
+
+   BUTTON CN_STD_REFERENSET_BTN
+   LABEL Standardize Reference Sets
+   BITMAP reference_set
+    
+   BUTTON CN_STD_LAYER_CAT_BTN
+   LABEL Standardize Layer Category
+   BITMAP layer_category
+  
+  BUTTON CN_STD_LAYER_STA_BTN
+  LABEL Standardize Layer Status
+  BITMAP layer_settings
+
+SEPARATOR
+
+ BUTTON CN_ATTR_TOOL_BTN
+ LABEL  Attribute Tool
+ BITMAP attribute.bmp
+
+SEPARATOR
+
+BUTTON CN_CK_MODLE_BTN
+LABEL Modeling Checkers
+BITMAP modeling_checker.bmp
+
+BUTTON CN_CK_DRAFT_BTN
+LABEL Drafting Checkers
+BITMAP drafting_checker.bmp
+
+BUTTON CN_CK_ASSEM_BTN
+LABEL Assembly Checkers
+BITMAP assembly_checker.bmp
+
+SEPARATOR
+
+BUTTON CN_COMPONENT_RENAME_BTN
+LABEL Rename and Export Component
+BITMAP rename_and_export_component

@@ -1,0 +1,93 @@
+!
+! 
+!
+TITLE  Dimension Style - GC Toolkits
+VERSION 170
+DOCK TOP
+   
+   BUTTON CN_DIM_INHERIT_STYLE_BTN
+   LABEL Inherit Style
+   BITMAP autoinherit_dim
+   
+   
+SEPARATOR
+
+
+   BUTTON CN_DIM_NONE_TOL_BTN
+   LABEL No Tolerance
+   BITMAP dimension_no_tolerance
+   
+   
+   BUTTON CN_DIM_BILATERAL_ONE_LINE_BTN
+   LABEL Equal Bilateral Tolerance
+   BITMAP dimension_equal_bilateral_tolerance
+   
+   BUTTON CN_DIM_BILATERAL_TWO_LINES_BTN
+   LABEL Bilateral Tolerance
+   BITMAP dimension_bilateral_tolerance
+   
+   
+   BUTTON CN_DIM_UNILATERAL_ABOVE_BTN
+   LABEL Unilateral +
+   BITMAP dimension_unilateral_above_tolerance
+
+   BUTTON CN_DIM_UNILATERAL_BELOW_BTN
+   LABEL Unilateral -
+   BITMAP dimension_unilateral_below_tolerance
+   
+   
+   BUTTON CN_DIM_BASIC_BTN
+   LABEL Basic
+   BITMAP dimension_basic_tolerance
+   
+   BUTTON CN_DIM_REFERENCE_BTN
+   LABEL Reference
+   BITMAP dimension_reference_tolerance
+   
+   
+   BUTTON CN_DIM_FIT_SYMBOLS_BTN
+   LABEL Fit Symbols
+   BITMAP dimension_fit_symbols
+   
+   BUTTON CN_DIM_FIT_SYMBOLS_AND_LIMITS_BTN
+   LABEL Fit Symbols and Limits
+   BITMAP dimension_fit_symbols_and_limits
+   
+   
+   BUTTON CN_DIM_FIT_SYMBOLS_AND_TOLERANCES_BTN
+   LABEL Fit Symbols and Tolerances
+   BITMAP dimension_fit_symbols_and_tolerances
+   
+   
+   BUTTON CN_DIM_TOLERANCES_ONLY_BTN
+   LABEL Tolerances Only
+   BITMAP dimension_tolerances_only
+
+SEPARATOR
+
+   
+   BUTTON CN_DIM_RAD_DIA_TXT_HORIZONTAL_BTN
+   LABEL Radius-Diameter Text Horizontal
+   BITMAP diameter_parallel_text
+   
+   BUTTON CN_DIM_RAD_DIA_TXT_PARALLEL_BTN
+   LABEL Radius-Diameter Text Parallel
+   BITMAP diameter_horizontal_text
+   
+   
+SEPARATOR
+
+
+   BUTTON CN_DIM_RAD_DIA_ARROW_INNNER_BTN
+   LABEL Radius-Diameter Inner Arrow
+   BITMAP dimension_dim_inner_arrow
+   
+   BUTTON CN_DIM_RAD_DIA_ARROW_OUTER_BTN
+   LABEL Radius-Diameter Outer Arrow
+   BITMAP dimension_dim_outer_arrow
+   
+  
+   BUTTON CN_DIM_RESET_BTN
+   LABEL Reset Radius and Diameter Preferences
+   BITMAP reset
+

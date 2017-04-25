@@ -1,0 +1,18 @@
+!
+! 
+!
+TITLE Gear Modeling - GC Toolkits 
+VERSION 160
+DOCK TOP
+
+BUTTON CYLINDER_GEAR_V2
+LABEL Cylinder Gear Modeling
+BITMAP cylinder_gear.bmp
+
+BUTTON BEVEL_GEAR_V2
+LABEL Bevel Gear Modeling
+BITMAP bevel_gear.bmp
+
+BUTTON DISPLAY_GEAR_MODELING
+LABEL Display Gear
+BITMAP display_gear.bmp

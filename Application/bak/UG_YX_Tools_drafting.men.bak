@@ -1,0 +1,382 @@
+!
+! 
+!
+VERSION 120
+EDIT UG_GATEWAY_MAIN_MENUBAR
+
+AFTER UG_WINDOW
+
+    CASCADE_BUTTON CN_APPLICATION_BTN
+    LABEL GC Toolkits
+
+END_OF_AFTER
+
+MENU CN_APPLICATION_BTN
+
+    CASCADE_BUTTON CN_DCS_BTN
+    LABEL GC DCS
+    
+     CASCADE_BUTTON CN_DRAFTING_TOOL_BTN
+     LABEL Drafting Tool
+     
+     CASCADE_BUTTON CN_DRAFTING_VIEW_BTN
+     LABEL View
+
+     CASCADE_BUTTON CN_DRAFTING_ANN_BTN
+     LABEL Annotation
+     
+    CASCADE_BUTTON  CN_DRAFTING_DIM_BTN
+    LABEL Dimension
+    
+    CASCADE_BUTTON CN_DRAFT_GEAR_TOOL_BTN
+    LABEL Gear
+    
+    CASCADE_BUTTON CN_DRAFT_SPRING_TOOL_BTN
+    LABEL Spring
+     
+END_OF_MENU
+
+MENU CN_DCS_BTN
+
+    CASCADE_BUTTON CN_CHECKER_BTN
+    LABEL Checkers
+    
+    CASCADE_BUTTON CN_ATTRIBUTE_TOOL_BTN
+    LABEL Attribute Tool
+     
+    CASCADE_BUTTON CN_STANDARDIZATION_TOOL_BTN
+    LABEL Standardization Tool
+    
+     CASCADE_BUTTON CN_OTHER_TOOL_BTN
+     LABEL Other Tool
+     
+END_OF_MENU
+
+
+MENU CN_CHECKER_BTN
+    
+    BUTTON CN_CK_MODLE_BTN
+    LABEL Modeling Checkers
+    BITMAP modeling_checker.bmp
+    ACTIONS mqc_profile_modeling_cn.dfa
+    
+    BUTTON CN_CK_DRAFT_BTN
+    LABEL Drafting Checkers
+    BITMAP drafting_checker.bmp
+    ACTIONS mqc_profile_drafting_cn.dfa
+    
+    BUTTON CN_CK_ASSEM_BTN
+    LABEL Assembly Checkers
+    BITMAP assembly_checker.bmp
+    ACTIONS mqc_profile_assembly_cn.dfa
+    
+END_OF_MENU
+
+MENU CN_ATTRIBUTE_TOOL_BTN
+    
+    BUTTON CN_ATTR_TOOL_BTN
+    LABEL Attribute Tool...
+    BITMAP attribute.bmp
+    ACTIONS libgctool
+    
+END_OF_MENU
+
+MENU CN_OTHER_TOOL_BTN
+
+    BUTTON CN_COMPONENT_RENAME_BTN
+    LABEL Rename and Export Component...
+    BITMAP rename_and_export_component
+    ACTIONS libgctool
+
+END_OF_MENU
+
+
+MENU CN_DRAFTING_TOOL_BTN
+    
+    BUTTON CN_DRAF_TEMPLATE_REPLACE_BTN
+    LABEL Replace Template...
+    BITMAP comparison_overlay
+    ACTIONS libgctool
+    
+    BUTTON CN_DRAFT_MERGE_SHEET_BTN
+    LABEL Merge Sheet...
+    BITMAP layer_layout_switch
+    ACTIONS libgctool
+    
+    BUTTON CN_DRAFT_EXPORT_PLIST_BTN
+    LABEL Export Parts List...
+    BITMAP navigate_to_parts_list_row
+    ACTIONS libgctool
+    
+    BUTTON CN_DRAFT_EDIT_PLIST_BTN
+    LABEL Edit Parts List...
+    BITMAP table_edit
+    ACTIONS libgctool
+    
+    BUTTON CN_DRAFT_CALLOUT_SORT_BTN
+    LABEL Sort Callout...
+    BITMAP sort_callout
+    ACTIONS libgctool
+    
+END_OF_MENU
+
+
+MENU CN_DRAFTING_VIEW_BTN
+    
+    BUTTON CN_DRAFT_RPOJECT_CURVES_TO_VIEW_BTN
+    LABEL Project Curves to View...
+    BITMAP project_curves_to_view_plane
+    ACTIONS libgctool
+    
+    SEPARATOR
+    
+    BUTTON CN_DRAFT_DART_SECTION_VIEW_BTN
+    LABEL Edit Section View Boundary...
+    BITMAP box1_section
+    ACTIONS libgctool
+    
+    BUTTON CN_DRAFT_PARTIAL_VIEW_BTN
+    LABEL Partial Section View...
+    BITMAP partial_section_view
+    ACTIONS libgctool
+   
+    BUTTON CN_DRAFT_CURVE_SECTION_VIEW_BTN
+    LABEL Curve Section...
+    BITMAP curve_section
+    ACTIONS libgctool
+    
+END_OF_MENU
+
+MENU CN_DRAFTING_ANN_BTN
+    
+    BUTTON CN_DRAFT_MUST_SYMBOL_BTN
+    LABEL Checking Symbol...
+    BITMAP triangleup
+    ACTIONS libgctool
+ 
+    BUTTON CN_DRAFT_ARROW_BTN
+    LABEL Arrow with Notes...
+    BITMAP arrow_with_note
+    ACTIONS libgctool
+     
+    BUTTON CN_DRAFT_HOLE_SYMBOL_BTN
+    LABEL Hole Datum Symbol...
+    BITMAP symbol_datum1
+    ACTIONS libgctool
+ 
+    SEPARATOR
+ 
+    BUTTON CN_DRAFT_GRID_LINE_BTN
+    LABEL Grid Line...
+    BITMAP grid_options
+    ACTIONS libgctool
+   
+    SEPARATOR
+  
+    BUTTON CN_DRAFT_POINT_ANN_BTN
+    LABEL Point Annotation...
+    BITMAP point_coordinate_annotation
+    ACTIONS libgctool
+ 
+    BUTTON CN_DRAFT_POINT_ANN_UPDATE_BTN
+    LABEL Point Annotation Update
+    BITMAP update_arrow_red
+    ACTIONS libgctool
+ 
+    BUTTON CN_DRAFT_COORDINATE_TABLE
+    LABEL Coordinate Table...
+    BITMAP coordinate_table
+    ACTIONS libgctool
+    
+    SEPARATOR
+    
+    BUTTON CN_DRAFT_TECH_NOTE_BTN
+    LABEL Technical Notes Library...
+    BITMAP cell_align_bottom_left
+    ACTIONS libgctool
+    
+  SEPARATOR
+    BUTTON CN_DRAFT_CHECK_TABLE_BTN
+    LABEL Checking Table...
+    BITMAP checking_table
+    ACTIONS libgctool
+  SEPARATOR
+    
+    BUTTON CN_MATCH_STYLE_BTN
+    LABEL Match Style...
+    BITMAP dimension_format
+    ACTIONS libgctool
+    
+END_OF_MENU
+    
+    
+MENU CN_DRAFTING_DIM_BTN
+ 
+    CASCADE_BUTTON CN_DRAFTING_DIM_STYLE_BTN
+    LABEL Dimension Style
+   
+    SEPARATOR
+   
+    BUTTON CN_DRAFT_SYM_DIM_BTN
+    LABEL Symmetric Dimension...
+    BITMAP dimension_symmetric
+    ACTIONS libgctool
+      
+    BUTTON CN_DRAFT_DIM_NOTE_BTN
+    LABEL Note Under Dimension...
+    BITMAP dimension_annotation
+    ACTIONS libgctool 
+   
+    SEPARATOR
+    
+    BUTTON CN_DRAFT_DIM_SORT_BTN
+    LABEL Sort Dimension...
+    BITMAP edit_drafting_object_associativity
+    ACTIONS libgctool
+    
+    BUTTON CN_DRAFT_ORDDIM_ALIGNING_BTN
+    LABEL Align Ordinate Dimension...
+    BITMAP align_ordinate_dimensions
+    ACTIONS libgctool
+    
+    BUTTON CN_DIM_QUERY_BTN
+    LABEL Dimension/Note Query...
+    BITMAP dimension_search
+    ACTIONS libgctool
+    
+    BUTTON CN_DIM_TOL_FIT_QUERY_BTN
+    LABEL Dimension Tolerance Fit Priority...
+    BITMAP dimension_tolerance_fit
+    ACTIONS libgctool
+
+END_OF_MENU
+    
+
+MENU CN_DRAFTING_DIM_STYLE_BTN
+       
+    BUTTON CN_DIM_INHERIT_STYLE_BTN
+    LABEL Inherit Style...
+    BITMAP autoinherit_dim
+    ACTIONS libgctool
+   
+    TOGGLE_BUTTON CN_DIM_NONE_TOL_BTN
+    LABEL No Tolerance
+    BITMAP dimension_no_tolerance
+    ACTIONS libgctool
+   
+    TOGGLE_BUTTON CN_DIM_BILATERAL_ONE_LINE_BTN
+    LABEL Equal Bilateral Tolerance
+    BITMAP dimension_equal_bilateral_tolerance
+    ACTIONS libgctool
+   
+    TOGGLE_BUTTON CN_DIM_BILATERAL_TWO_LINES_BTN
+    LABEL Bilateral Tolerance
+    BITMAP dimension_bilateral_tolerance
+    ACTIONS libgctool
+   
+    TOGGLE_BUTTON CN_DIM_UNILATERAL_ABOVE_BTN
+    LABEL Unilateral +
+    BITMAP dimension_unilateral_above_tolerance
+    ACTIONS libgctool
+
+    TOGGLE_BUTTON CN_DIM_UNILATERAL_BELOW_BTN
+    LABEL Unilateral -
+    BITMAP dimension_unilateral_below_tolerance
+    ACTIONS libgctool
+   
+    TOGGLE_BUTTON CN_DIM_BASIC_BTN
+    LABEL Basic
+    BITMAP dimension_basic_tolerance
+    ACTIONS libgctool
+   
+    TOGGLE_BUTTON CN_DIM_REFERENCE_BTN
+    LABEL Reference
+    BITMAP dimension_reference_tolerance
+    ACTIONS libgctool
+   
+    TOGGLE_BUTTON CN_DIM_FIT_SYMBOLS_BTN
+    LABEL Fit Symbols
+    BITMAP dimension_fit_symbols
+    ACTIONS libgctool
+   
+    TOGGLE_BUTTON CN_DIM_FIT_SYMBOLS_AND_LIMITS_BTN
+    LABEL Fit Symbols and Limits
+    BITMAP dimension_fit_symbols_and_limits
+    ACTIONS libgctool
+   
+    TOGGLE_BUTTON CN_DIM_FIT_SYMBOLS_AND_TOLERANCES_BTN
+    LABEL Fit Symbols and Tolerances
+    BITMAP dimension_fit_symbols_and_tolerances
+    ACTIONS libgctool
+   
+    TOGGLE_BUTTON CN_DIM_TOLERANCES_ONLY_BTN
+    LABEL Tolerances Only
+    BITMAP dimension_tolerances_only
+    ACTIONS libgctool
+
+    SEPARATOR
+
+    TOGGLE_BUTTON CN_DIM_RAD_DIA_TXT_HORIZONTAL_BTN
+    LABEL Radius-Diameter Text Horizontal
+    BITMAP diameter_horizontal_text
+    ACTIONS libgctool
+   
+    TOGGLE_BUTTON CN_DIM_RAD_DIA_TXT_PARALLEL_BTN
+    LABEL Radius-Diameter Text Parallel
+    BITMAP diameter_parallel_text
+    ACTIONS libgctool
+    
+    TOGGLE_BUTTON CN_DIM_RAD_DIA_ARROW_INNNER_BTN
+    LABEL Radius-Diameter Inner Arrow
+    BITMAP dimension_dim_inner_arrow
+    ACTIONS libgctool
+   
+    TOGGLE_BUTTON CN_DIM_RAD_DIA_ARROW_OUTER_BTN
+    LABEL Radius-Diameter Outer Arrow
+    BITMAP dimension_dim_outer_arrow
+    ACTIONS libgctool
+   
+    BUTTON CN_DIM_RESET_BTN
+    LABEL Reset Radius and Diameter Preferences
+    BITMAP reset
+    ACTIONS libgctool
+   
+END_OF_MENU
+
+
+MENU CN_STANDARDIZATION_TOOL_BTN
+    
+    BUTTON CN_STD_LAYER_CAT_BTN
+    LABEL Standardize Layer Category...
+    BITMAP layer_category
+    ACTIONS libgctool
+   
+    BUTTON CN_STD_LAYER_STA_BTN
+    LABEL Standardize Layer Status...
+    BITMAP layer_settings
+    ACTIONS libgctool
+    
+END_OF_MENU
+
+MENU CN_DRAFT_GEAR_TOOL_BTN
+
+    BUTTON CN_DRAFT_GEAR_PARAMETERS_BTN
+    LABEL Gear Parameters...
+    BITMAP gear_parameters
+    ACTIONS libgearmodeling
+   
+    BUTTON GEAR_DRAFTING
+    LABEL Gear Simplified Drawing...
+    BITMAP gear_simplified_drawing
+    ACTIONS libgearmodeling
+   
+END_OF_MENU
+
+MENU CN_DRAFT_SPRING_TOOL_BTN
+   
+    BUTTON CN_DRAFT_SPRING_DRAFTING
+    LABEL Spring Simplified View...
+    BITMAP spring_simplified_drawing
+    ACTIONS libgctool
+   
+END_OF_MENU

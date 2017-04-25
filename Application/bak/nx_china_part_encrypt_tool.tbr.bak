@@ -1,0 +1,14 @@
+!
+! 
+!
+TITLE  Part File Security - GC Toolkits
+VERSION 170
+DOCK TOP
+
+    BUTTON CN_STD_SET_PASSWORD_BTN
+    LABEL Set Password
+    BITMAP encrypt_part
+
+    BUTTON CN_STD_REMOVE_PASSWORD_BTN
+    LABEL Remove Password
+    BITMAP decrypt_part

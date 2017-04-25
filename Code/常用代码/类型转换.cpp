@@ -1,0 +1,1 @@
+const char* FileName = file_path_name.data();//string转char*,file_path_name是string类型,FileName是char*类型

@@ -1,0 +1,163 @@
+#! NX/KF 5.0
+#
+
+Defclass: center_block (%ui_comp) ;
+
+(string) title:     "对称块";
+(string) cue:       "选择点或者面创建立方体";
+
+(number modifiable) X_Dim:   100.0 ;
+(number modifiable) Y_Dim:   100.0 ;
+(number modifiable) Z_Dim:   100.0 ;
+(point modifiable ) mypoint: point(shaft_XC:value:/2*-1,shaft_YC:value:/2*-1,shaft_ZC:value:/2*-1);
+(point modifiable ) mypoint_xy: point(shaft_XC:value:/2*-1,shaft_YC:value:/2*-1,0);
+(point modifiable ) mypoint_xz: point(shaft_XC:value:/2*-1,0,shaft_ZC:value:/2*-1);
+(point modifiable ) mypoint_yz: point(0,shaft_YC:value:/2*-1,shaft_ZC:value:/2*-1);
+
+#(list) DialogItems: {centergroup:,Dim_Group:};
+
+#-------------对称中心--------------#
+(child) centergroup:
+{
+    class, %ui_comp_group;
+    title, "设置";
+    Members, {centerabout:};
+};  
+
+(Child) centerabout: 
+{
+	Class, %ui_comp_enum;
+	value, 0;
+	PresentationStyle, 0;
+	TitleVisibility, true;
+	BorderVisibility, true;
+	RadioOrientation, 0;
+	Titles, {"关于原点对称","锁定XC-YC","锁定XC-ZC","锁定YC-ZC"};
+	Icons, {"csys_threeplanes","plane_xcyc","plane_xczc","plane_yczc"};
+#	HQBitmap, ture;
+};
+
+#-------------尺寸组--------------#
+(child) Dim_Group:
+{
+    class, %ui_comp_group;
+    title, "尺寸";
+    Members, {shaft_XC:, shaft_YC:, shaft_ZC:};
+};   
+
+
+(child) shaft_XC:
+{
+        class, %ui_comp_expression;
+        Title, "长度(XC)";
+        value, X_Dim:;
+        units, if ( ug_askPartUnits ( "" ) = Pounds_And_Inches ) 
+               Then "in" 
+               Else "mm";
+
+};
+
+(child) shaft_YC:
+{
+        class, %ui_comp_expression;
+        Title, "宽度(YC)";
+        value, Y_Dim:;
+        units, if ( ug_askPartUnits ( "" ) = Pounds_And_Inches ) 
+               Then "in" 
+               Else "mm";
+};
+
+(child) shaft_ZC:
+{
+        class, %ui_comp_expression;
+        Title, "高度(ZC)";
+        value, Z_Dim:;
+        units, if ( ug_askPartUnits ( "" ) = Pounds_And_Inches ) 
+               Then "in" 
+               Else "mm";
+};
+
+#-------------创建块--------------#
+
+(Child) ug_block: 
+{
+  Class, if centerabout:value:=0 then ug_block else nulldesign;
+  length, shaft_XC:value:;
+  Width, shaft_YC:value:;
+  Height, shaft_ZC:value:;
+  Origin, mypoint:;
+  X_Axis, Vector(1,0,0);
+  Y_Axis, Vector(0,1,0);
+  Operation, Unite;
+  Target, {};
+};
+
+
+(Child) ug_block_xy: 
+{
+  Class, if centerabout:value:=1 then ug_block else nulldesign;
+  length, shaft_XC:value:;
+  Width, shaft_YC:value:;
+  Height, shaft_ZC:value:;
+  Origin, mypoint_xy:;
+  X_Axis, Vector(1,0,0);
+  Y_Axis, Vector(0,1,0);
+  Operation, Unite;
+  Target, {};
+};
+
+(Child) ug_block_xz: 
+{
+  Class, if centerabout:value:=2 then ug_block else nulldesign;
+  length, shaft_XC:value:;
+  Width, shaft_YC:value:;
+  Height, shaft_ZC:value:;
+  Origin, mypoint_xz:;
+  X_Axis, Vector(1,0,0);
+  Y_Axis, Vector(0,1,0);
+  Operation, Unite;
+  Target, {};
+};
+
+(Child) ug_block_yz: 
+{
+  Class, if centerabout:value:=3 then ug_block else nulldesign;
+  length, shaft_XC:value:;
+  Width, shaft_YC:value:;
+  Height, shaft_ZC:value:;
+  Origin, mypoint_yz:;
+  X_Axis, Vector(1,0,0);
+  Y_Axis, Vector(0,1,0);
+  Operation, Unite;
+  Target, {};
+};
+
+
+#+
+(Method integer) OnInitialize:(Instance $instance)
+@{
+		%ui_comp_setCacheValue(self(), num_hubs:,num_hub:, value);
+		%ui_comp_setCacheValue(self(), num_hubs:,num_hub:, value); 
+		%ui_comp_setCacheValue(self(), num_hubs:,num_hub:, value); 
+
+   0;
+};
+#-
+
+
+#+
+(Method integer ) Update:(Instance $instance)
+@{
+		if($instance=ug_block:)then
+	{
+	storeValue(shaft_XC:value:, self(), X_Dim);
+	storeValue(shaft_YC:value:, self(), Y_Dim);
+	storeValue(shaft_ZC:value:, self(), Z_Dim);
+	storeValue(ug_block:point:, self(), mypoint);
+	}
+	else donothing;
+	
+     0;
+};
+
+#-

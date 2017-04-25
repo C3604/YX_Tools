@@ -1,0 +1,83 @@
+!
+! 
+!
+VERSION 120
+EDIT UG_GATEWAY_MAIN_MENUBAR
+
+AFTER UG_HELP
+
+    CASCADE_BUTTON YX_tools
+    LABEL YX工具(建模)
+
+END_OF_AFTER
+
+MENU YX_tools
+
+    BUTTON Body_info
+    LABEL 实体信息
+	MESSAGE	获取实体的相关信息
+    BITMAP comp_box_inside
+    ACTIONS YX_Body_info  
+	
+	BUTTON	Yang_3
+	LABEL	对称块
+	MESSAGE	生成实体块
+	BITMAP	mirror_body
+	ACTIONS	SymBlock
+
+	BUTTON	Yang_4
+	LABEL	简单圆柱
+	MESSAGE	生成圆柱
+	BITMAP	cylinder
+	ACTIONS	simple_cylinder
+	
+	BUTTON	Yang_10
+	LABEL	计算器
+	MESSAGE	计算器
+	BITMAP calculator
+	ACTIONS "start calc.exe"
+
+	CASCADE_BUTTON YX1
+    LABEL BOM工具
+	
+    CASCADE_BUTTON YX2
+    LABEL 主菜单2
+    
+
+END_OF_MENU
+
+
+MENU YX1
+
+	
+    BUTTON YX1_1
+    LABEL 设置属性
+	MESSAGE	选择对象导出BOM表
+    BITMAP attribute
+    ACTIONS seangyang_set_obj_attr_tool
+	
+	BUTTON YX1_2
+	LABEL	导出BOM表
+	MESSAGE	选择对象导出BOM表
+	BITMAP	table_export
+	ACTIONS	seangyang_tools_export_bom
+
+    
+END_OF_MENU
+
+MENU YX2
+
+    BUTTON YX2_1
+    LABEL 子菜单2-1
+    BITMAP help
+    ACTIONS 
+	
+	BUTTON YX2_2
+    LABEL 子菜单2-2
+    BITMAP help
+    ACTIONS 
+
+    
+END_OF_MENU
+
+

@@ -1,0 +1,137 @@
+!
+! 
+!
+TITLE  Drafting Tool - GC Toolkits 
+VERSION 170
+DOCK TOP
+
+
+    BUTTON CN_DRAF_TEMPLATE_REPLACE_BTN
+    LABEL Replace Template
+    BITMAP comparison_overlay
+
+    BUTTON CN_DRAFT_MERGE_SHEET_BTN
+    LABEL Merge Sheet
+    BITMAP layer_layout_switch
+
+    BUTTON CN_DRAFT_EXPORT_PLIST_BTN
+    LABEL Export Parts List
+    BITMAP navigate_to_parts_list_row
+
+    BUTTON CN_DRAFT_EDIT_PLIST_BTN
+    LABEL Edit Parts List
+    BITMAP table_edit
+
+    BUTTON CN_DRAFT_CALLOUT_SORT_BTN
+    LABEL Sort Callout
+    BITMAP sort_callout
+
+    SEPARATOR
+
+    BUTTON CN_COMPONENT_RENAME_BTN
+    LABEL Rename and Export Component
+    BITMAP rename_and_export_component
+
+    SEPARATOR
+
+    BUTTON CN_DRAFT_RPOJECT_CURVES_TO_VIEW_BTN
+    LABEL Project Curves to View
+    BITMAP project_curves_to_view_plane
+
+    SEPARATOR
+
+    BUTTON CN_DRAFT_DART_SECTION_VIEW_BTN
+    LABEL Edit Section View Boundary
+    BITMAP box1_section
+
+    BUTTON CN_DRAFT_PARTIAL_VIEW_BTN
+    LABEL Partial Section View
+    BITMAP partial_section_view
+
+    BUTTON CN_DRAFT_CURVE_SECTION_VIEW_BTN
+    LABEL Curve Section
+    BITMAP curve_section
+
+    SEPARATOR
+
+    BUTTON CN_DRAFT_ORDDIM_ALIGNING_BTN
+    LABEL Align Ordinate Dimension
+    BITMAP align_ordinate_dimensions
+
+    BUTTON CN_DIM_QUERY_BTN
+    LABEL Dimension/Note Query
+    BITMAP dimension_search
+
+    BUTTON CN_DIM_TOL_FIT_QUERY_BTN
+    LABEL Dimension Tolerance Fit Priority
+    BITMAP dimension_tolerance_fit
+    
+    BUTTON CN_DRAFT_DIM_SORT_BTN
+    LABEL Sort Dimension
+    BITMAP edit_drafting_object_associativity
+
+    BUTTON CN_DRAFT_SYM_DIM_BTN
+    LABEL Symmetric Dimension
+    BITMAP dimension_symmetric
+
+    BUTTON CN_DRAFT_DIM_NOTE_BTN
+    LABEL Dimension Note
+    BITMAP dimension_annotation
+
+    SEPARATOR
+
+    BUTTON CN_DRAFT_GRID_LINE_BTN
+    LABEL Grid Line
+    BITMAP grid_options
+
+    BUTTON CN_DRAFT_MUST_SYMBOL_BTN
+    LABEL Checking Symbol
+    BITMAP triangleup
+
+    BUTTON CN_DRAFT_CHECK_TABLE_BTN
+    LABEL Checking Table
+    BITMAP checking_table
+
+    BUTTON CN_DRAFT_ARROW_BTN
+    LABEL Arrow with Notes
+    BITMAP arrow_with_note
+
+    BUTTON CN_DRAFT_HOLE_SYMBOL_BTN
+    LABEL Hole Datum Symbol
+    BITMAP symbol_datum1
+
+    BUTTON CN_DRAFT_POINT_ANN_BTN
+    LABEL Point Annotation
+    BITMAP point_coordinate_annotation
+
+    BUTTON CN_DRAFT_POINT_ANN_UPDATE_BTN
+    LABEL Point Annotation Update
+    BITMAP update_red
+
+    BUTTON CN_DRAFT_COORDINATE_TABLE
+    LABEL Coordinate Table
+    BITMAP coordinate_table
+
+    BUTTON CN_DRAFT_TECH_NOTE_BTN
+    LABEL Technical Notes Library
+    BITMAP cell_align_bottom_left
+
+    BUTTON CN_MATCH_STYLE_BTN
+    LABEL Match Style
+    BITMAP dimension_format
+
+    SEPARATOR
+
+    BUTTON CN_DRAFT_GEAR_PARAMETERS_BTN
+    LABEL Gear Parameters
+    BITMAP gear_parameters
+
+    BUTTON GEAR_DRAFTING
+    LABEL Gear Simplified Drawing
+    BITMAP gear_simplified_drawing
+
+    SEPARATOR
+   
+    BUTTON CN_DRAFT_SPRING_DRAFTING
+    LABEL Spring Simplified View
+    BITMAP spring_simplified_drawing

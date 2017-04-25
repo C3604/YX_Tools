@@ -1,0 +1,23 @@
+!
+! 
+!
+TITLE  Manufacture Prepare - GC Toolkits
+VERSION 170
+DOCK TOP
+
+
+    BUTTON CN_ELECTRODE_STANDARD_WORK_BTN
+    LABEL Workpiece Setup
+    BITMAP ele_checkgreen
+    
+    BUTTON CN_ELECTRODE_SETUP_BTN
+    LABEL Configuration
+    BITMAP ele_init_proj
+
+    BUTTON CN_ELECTRODE_TASK_MANAGER_BTN
+    LABEL Electrode Task Manager
+    BITMAP ele_bom
+    
+    BUTTON CN_CAM_MANUFACTURE_DATUM_BTN
+    LABEL Manufacture Datum
+    BITMAP datumcsys

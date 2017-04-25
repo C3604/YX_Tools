@@ -1,0 +1,25 @@
+!
+! 
+!
+TITLE  Spring Tool - GC Toolkits
+VERSION 170
+DOCK TOP
+
+
+    BUTTON CN_SPRING_CLY_COMP
+    LABEL Cylinder Compression Spring
+    BITMAP cylinder_compression_spring
+
+    BUTTON CN_SPRING_CLY_TENS
+    LABEL Cylinder Tension Spring
+    BITMAP cylinder_tension_spring
+
+    BUTTON CN_SPRING_DISC_SPRING
+    LABEL Disc Spring
+    BITMAP disc_spring
+
+    SEPARATOR
+
+    BUTTON DELETE_SPRING_BTN
+    LABEL Delete Spring
+    BITMAP delete_spring
