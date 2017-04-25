@@ -223,7 +223,6 @@ void SymBlock::dialogShown_cb()
 		previewkey=1;
 		Initializationpreview();
 		selectbooltype();
-/*				createblock();*/
 	}
 
     catch(exception& ex)
